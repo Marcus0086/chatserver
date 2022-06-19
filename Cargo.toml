@@ -1,0 +1,11 @@
+[package]
+name = "chatserver"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+shuttle-service = { version = "0.3.3", features = ["web-rocket"] }
+rocket = {version = "0.5.0-rc.2", features = ["json"]}
